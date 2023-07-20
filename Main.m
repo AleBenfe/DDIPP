@@ -275,7 +275,7 @@ while flag
         2*loss(iter)*scaling/numel(gn), ...
         max(V(:)),nnz(extractdata(V)));
 
-    if mod(iter,10)==0
+    if mod(iter,visualIter)==0
         onlineVisualization(Gx,V.reshape(kernelEstDim),...
             gn,psf)
     end
